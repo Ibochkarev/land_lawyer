@@ -1,46 +1,45 @@
 footer {
+  background-color: $matisse;
   flex: 0 0 auto;
-  background-color: $gray;
-  padding: 55px 0 60px 0;
+  padding: 78px 0 120px 0;
 
-  .footer_menu__wrap {
+  .footer__wrap {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
 
-    .col {
-      flex-grow: 0;
-      flex-basis: 20%;
+    .h3 {
+      color: $white;
+      margin-bottom: 25px;
+    }
 
-      .footer_menu--list {
-        .footer_menu--item {
-          margin-bottom: 10px;
+    .footer_menu__wrap {
+      display: flex;
 
-          .footer_menu--link {
-            font-family: 'lato-medium', sans-serif;
-            color: $white;
-            font-style: normal;
-            line-height: normal;
-            font-size: 14px;
-            text-transform: uppercase;
+      .col {
+        flex-basis: 50%;
+        padding-left: 0;
+        padding-right: 30px;
+
+        .footer_menu--list {
+          .footer_menu--item {
             margin-bottom: 10px;
-            display: inline-block;
+            line-height: initial;
 
-            &:hover {
-              color: $orange;
-              transition: all 250ms ease;
+            .footer_menu--link {
+              font-family: Helvetica;
+              font-size: 14px;
+              font-weight: 300;
+              letter-spacing: 0.35px;
+              color: $white;
+
+              &:hover {
+                color: $mercury;
+                text-decoration: underline;
+                transition: all 250ms ease;
+              }
             }
-          }
 
-          .footer_menu--link.gray-normal {
-            text-transform: none;
-            color: $light-gray;
-            margin-bottom: 0;
-
-            &:hover {
-              color: $orange;
-              transition: all 250ms ease;
-            }
           }
         }
       }

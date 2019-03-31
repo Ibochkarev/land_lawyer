@@ -1,0 +1,72 @@
+header.header {
+  background-color: $white;
+  border-bottom: 1px solid #000;
+
+  .header-top {
+    background-color: $blue;
+    color: $white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+
+    .wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+
+    &-title,
+    &-adress,
+    &-phone {
+      color: $white;
+      font-family: Helvetica;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 34px;
+      letter-spacing: 0.4px;
+
+      a {
+        color: $white;
+
+        &:hover {
+          opacity: .8;
+          transition: all 250ms ease;
+        }
+      }
+    }
+  }
+
+  .header-middle {
+    background-color: $white;
+    color: $tropaz;
+    padding: 30px 0;
+
+    .logo-wrap {
+      display: flex;
+      align-items: center;
+
+      .logo {
+        width: 72px;
+        height: auto;
+        margin-right: 16px;
+      }
+
+      span {
+        color: $tropaz;
+        font-family: "Gill Sans";
+        font-size: 24px;
+        font-weight: 400;
+        letter-spacing: 0.6px;
+      }
+    }
+
+    .work-clock-wrap{
+      .work-clock-item{
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

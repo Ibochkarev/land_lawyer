@@ -19,8 +19,8 @@ body {
   line-height: 1.5;
   font-family: $default-font;
   overflow-x: hidden;
-  color: $black;
-  background: #D8D8D8;
+  color: $mineShaft;
+  background: $white;
   outline: 0;
 
   input,
@@ -38,7 +38,17 @@ body {
   }
 }
 
+.h3 {
+  display: block;
+  font-family: Helvetica;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.45px;
+}
+
 a {
+  cursor: pointer;
+
   &:hover {
     text-decoration: none;
   }
@@ -120,7 +130,6 @@ section {
   .sec-descr {
     line-height: 27px;
     font-size: 16px;
-    color: $light-gray;
     margin-bottom: 20px;
   }
 }
@@ -132,45 +141,6 @@ h1.content--title {
   text-transform: uppercase;
   color: $mineShaft;
   margin-bottom: 20px;
-}
-
-section#news-content,
-section#post-content,
-section#stocks-content,
-section#prices-content,
-section#reviews-content,
-section#accessories-content,
-section#tips-content,
-section#teams-content,
-section#production-content,
-section#trim-content,
-section#services-content,
-section#windows_to_order-content,
-section#about-content,
-section#apartment-content,
-section#blind_windows-content,
-section#blind_window-content,
-section#windows_glued_bar-content,
-section#german_windows-content,
-section#eurowindows-content,
-section#wooden_windows-content,
-section#door_to_order-content,
-section#pine-content,
-section#okosyachka-content,
-section#price_econom-content,
-section#measuring-content,
-section#measuring-content,
-section#contacts-content,
-section#accessories_list-content,
-section#accessor_detail-content {
-  padding-top: 0;
-}
-
-.content__text {
-  line-height: 27px;
-  font-size: 16px;
-  color: $light-gray;
-  font-family: 'lato-light', sans-serif;
 }
 
 //Модули
