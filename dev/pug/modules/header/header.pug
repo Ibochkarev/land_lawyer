@@ -12,34 +12,38 @@ header.header
   .header-middle
     .container
       .row
-        .col-md-5
+        .item-col
           .logo-wrap
             a(href='#')
               img(src="", class='logo', alt="Logo")
               span ЗЕМЕЛЬНЫЙ ЮРИСТ
-        .col-md-4
-          .work-clock-wrap
-            .work-clock-item
-              .work-clock-item__icon
-                img(src="", alt="РАБОТА ГОРЯЧЕЙ ЛИНИИ")
-              .work-clock-item__title РАБОТА ГОРЯЧЕЙ ЛИНИИ
-              .work-clock-item__descr ежедневно с 10:00 до 18:00
-            .work-clock-item
-              .work-clock-item__icon
-                img(src="", alt="ОНЛАЙН ПРИЕМ ЗАЯВОК")
-              .work-clock-item__title ОНЛАЙН ПРИЕМ ЗАЯВОК
-              .work-clock-item__descr круглосуточно 
-        .col-md-3
-          .work-phone-wrap
-            .work-phone-item
-              .work-phone-item__icon
-                img(src="", alt="Для звонков по Москве")
-              .work-phone-item__title Для звонков по Москве
-              .work-phone-item__number 
-                a(href="tel:+74951234567") +7 (495) 123 45 67
-            .work-phone-item
-              .work-phone-item__icon
-                img(src="", alt="Для звонков по всей России")
-              .work-phone-item__title Для звонков по всей России
-              .work-phone-item__number
-                a(href="tel:+74951234567") +7 (495) 123 45 67
+        .item-col
+          .items-wrap
+            .item
+              .item__icon
+                img(src="static/images/general/icon.png", alt="РАБОТА ГОРЯЧЕЙ ЛИНИИ")
+              .descr-wrap
+                .descr__title РАБОТА ГОРЯЧЕЙ ЛИНИИ
+                .descr__text ежедневно с 10:00 до 18:00
+            .item
+              .item__icon
+                img(src="static/images/general/icon.png", alt="ОНЛАЙН ПРИЕМ ЗАЯВОК")
+              .descr-wrap
+                .descr__title ОНЛАЙН ПРИЕМ ЗАЯВОК
+                .descr__text круглосуточно 
+        .item-col
+          .items-wrap
+            .item
+              .item__icon
+                img(src="static/images/general/icon.png", alt="Для звонков по Москве")
+              .descr-wrap
+                .descr__info Для звонков по Москве
+                .descr__number 
+                  a(href="tel:+74951234567") +7 (495) 123 45 67
+            .item
+              .item__icon
+                img(src="static/images/general/icon.png", alt="Для звонков по всей России")
+              .descr-wrap
+                .descr__info Для звонков по всей России
+                .descr__number
+                  a(href="tel:+74951234567") +7 (495) 123 45 67
