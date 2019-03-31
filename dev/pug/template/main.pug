@@ -1,0 +1,34 @@
+include ../utils/mixins
+block variables
+
+doctype html
+html(lang="ru-RU")
+  head
+    meta(charset="utf-8")
+    title #{title}
+    <!--[if IE]>
+    meta(http-equiv='X-UA-Compatible', content="IE = edge")
+    <![endif]-->
+    meta(name="viewport" content="width=device-width,initial-scale=1")
+    meta(name="keywords" content="окна, двери")
+    meta(name="description" content="Описание про данный сайт")
+    link(rel="stylesheet" type='text/css' href="static/css/styles.min.css")
+
+    <link rel="icon" href="static/images/general/favicons/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="static/images/general/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+
+  body(class=pageClass)
+    .wrapper
+      include ../modules/header/header
+      .content
+        block content
+
+      include ../modules/footer/footer
+    script(src="static/js/jquery-3.3.1.min.js")
+    script(src="static/js/popper.min.js")
+    script(src="static/js/libs.min.js")
+    script(src="static/js/main.js")
+    block script

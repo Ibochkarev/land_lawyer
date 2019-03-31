@@ -1,0 +1,13 @@
+@import "font-face";
+
+@include font-face("lato-black", "../fonts/Lato/Lato-Black");
+@include font-face("lato-bold", "../fonts/Lato/Lato-Bold");
+@include font-face("lato-light", "../fonts/Lato/Lato-Light");
+@include font-face("lato-medium", "../fonts/Lato/Lato-Medium");
+@include font-face("lato-regular", "../fonts/Lato/Lato-Regular");
+@include font-face("proxima", "../fonts/ProximaNova/ProximaNova-Regular");
+@include font-face("proxima-bold", "../fonts/ProximaNova/ProximaNova-Bold");
+@include font-face("montserrat-bold", "../fonts/Montserrat/Montserrat-ExtraBold");
+@include font-face("montserrat", "../fonts/Montserrat/Montserrat-Regular");
+@include font-face("rubik", "../fonts/Rubik/Rubik-Bold");
+@include font-face("circe", "../fonts/Circe/Circe-Regular");

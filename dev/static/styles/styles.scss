@@ -1,0 +1,178 @@
+@import "utils/libs";
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/fonts";
+
+::placeholder {
+  color: #666;
+}
+
+::selection {
+  background-color: $black;
+  color: $white;
+}
+
+body {
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.5;
+  font-family: $default-font;
+  overflow-x: hidden;
+  color: $black;
+  background: #D8D8D8;
+  outline: 0;
+
+  input,
+  textarea {
+    border: #666 1px solid;
+    outline: none;
+
+    &:focus:required:invalid {
+      border-color: red;
+    }
+
+    &:required:valid {
+      border-color: green;
+    }
+  }
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+
+  &.img-width {
+    width: 100%;
+  }
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.mx-auto {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+input:focus {
+  outline: 0;
+  box-shadow: none;
+
+}
+
+.form-control:focus {
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+section {
+  padding: 25px 0;
+
+  .sec-title {
+    margin-bottom: 20px;
+
+    .section_title {
+      font-family: 'lato-bold', sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      line-height: 92px;
+      font-size: 24px;
+      text-transform: uppercase;
+      text-align: left;
+      color: $mineShaft;
+    }
+
+  }
+
+  .sec-descr {
+    line-height: 27px;
+    font-size: 16px;
+    color: $light-gray;
+    margin-bottom: 20px;
+  }
+}
+
+h1.content--title {
+  font-family: 'lato-bold', sans-serif;
+  line-height: normal;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: $mineShaft;
+  margin-bottom: 20px;
+}
+
+section#news-content,
+section#post-content,
+section#stocks-content,
+section#prices-content,
+section#reviews-content,
+section#accessories-content,
+section#tips-content,
+section#teams-content,
+section#production-content,
+section#trim-content,
+section#services-content,
+section#windows_to_order-content,
+section#about-content,
+section#apartment-content,
+section#blind_windows-content,
+section#blind_window-content,
+section#windows_glued_bar-content,
+section#german_windows-content,
+section#eurowindows-content,
+section#wooden_windows-content,
+section#door_to_order-content,
+section#pine-content,
+section#okosyachka-content,
+section#price_econom-content,
+section#measuring-content,
+section#measuring-content,
+section#contacts-content,
+section#accessories_list-content,
+section#accessor_detail-content {
+  padding-top: 0;
+}
+
+.content__text {
+  line-height: 27px;
+  font-size: 16px;
+  color: $light-gray;
+  font-family: 'lato-light', sans-serif;
+}
+
+//Модули
+@import "modules/modules";
+@import "media";
