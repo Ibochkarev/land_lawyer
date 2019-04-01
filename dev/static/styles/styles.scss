@@ -130,6 +130,119 @@ input:focus {
   }
 }
 
+section#block_form {
+  padding: 85px 0 50px 0;
+
+  .title-block {
+    margin-bottom: 50px;
+
+    h2 {
+      color: $white;
+      font-family: Helvetica;
+      font-size: 36px;
+      font-weight: 700;
+      letter-spacing: 0.9px;
+      line-height: 1.2;
+    }
+  }
+
+  .descr-block {
+    color: $white;
+    font-family: Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    line-height: 1.2;
+    margin-bottom: 35px;
+    max-width: 540px;
+  }
+
+  .list-block__wrap {
+    .item {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 25px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &__icons {
+        img {
+          margin-right: 16px;
+        }
+      }
+
+      &__descr {
+        color: $white;
+        font-family: Helvetica;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0.4px;
+        max-width: 310px;
+      }
+    }
+  }
+}
+
+form#form_question {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  input,
+  textarea {
+    background: #0000;
+    border-color: $white;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+    color: $white;
+    width: 100%;
+    padding: 15px 18px 15px 18px;
+    margin-bottom: 22px;
+  }
+
+  ::-webkit-input-placeholder {
+    color: $white;
+  }
+
+  ::-moz-placeholder {
+    color: $white;
+  }
+
+  /* Firefox 19+ */
+  :-moz-placeholder {
+    color: $white;
+  }
+
+  /* Firefox 18- */
+  :-ms-input-placeholder {
+    color: $white;
+  }
+
+  button.btn {
+    width: 100%;
+    color: $white;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+    padding: 25px 15px;
+    background-color: $blue;
+    border-color: $blue;
+    outline: none;
+
+    &:hover {
+      opacity: .7;
+      cursor: pointer;
+    }
+  }
+
+}
+
 //Модули
 @import "modules/modules";
 @import "media";

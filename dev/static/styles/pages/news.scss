@@ -12,6 +12,12 @@
 
     &__img {
       margin-right: 15px;
+
+      img {
+        max-width: 165px;
+        width: 100%;
+        height: auto;
+      }
     }
 
     &__content {

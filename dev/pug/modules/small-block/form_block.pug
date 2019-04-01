@@ -1,0 +1,26 @@
+section#block_form(style="background-image: url(../static/images/general/bg_block_form.jpg); background-repeat: no-repeat; background-size: cover;")
+  .container
+    .row
+      .col-md-8.col-sm-5.col-12
+        .title-block 
+          h2 НЕ ТЕРЯЙТЕ ВРЕМЯ! <br> ДАВАЙТЕ СКОРЕЕ ОБСУДИМ ВАШУ ПРОБЛЕМУ
+        .descr-block После проведенной консультации вы получите ответы на такие вопросы как:
+        .list-block__wrap
+          .item
+            .item__icons
+              img(src="static/images/general/ic_form.png", alt="News item")
+            .item__descr Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          .item
+            .item__icons
+              img(src="static/images/general/ic_form.png", alt="News item")
+            .item__descr Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          .item
+            .item__icons
+              img(src="static/images/general/ic_form.png", alt="News item")
+            .item__descr Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+      .col-md-4.col-sm-5.col-12
+        form#form_question(action="")
+          input#name(type="text", name="name", placeholder="Ваше имя")
+          input#phone(type="tel", name="phone", placeholder="Контактный телефон")
+          textarea#message(name="message", cols="30", rows="5" placeholder="Суть вопроса")
+          button(type="submit", value="", class="btn btn-blue") ПОЛУЧИТЬ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ
