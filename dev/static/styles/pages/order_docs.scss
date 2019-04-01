@@ -1,0 +1,33 @@
+.radio-docs-item {
+  margin-bottom: 45px;
+
+  .custom-radio {
+    color: #919191;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: 300;
+
+    label {
+      color: $tundora;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0.45px;
+      margin-left: 10px;
+    }
+
+    span {
+      display: block;
+      margin-left: 28px;
+    }
+  }
+}
+
+.form-top {
+  margin-bottom: 15px;
+}
+
+.form-bottom {
+  background-color: $wildSand;
+  padding: 32px 30px;
+  margin-bottom: 50px;
+}

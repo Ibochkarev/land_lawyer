@@ -1,0 +1,68 @@
+extends template/main
+
+block variables
+  - var title = 'Заказ новостей'
+  - var pageClass = 'order_news'
+
+block content
+
+  section#news-content
+    .container
+      .row
+        .col-12
+          .headline-wrap
+            .headline-title УКАЖИТЕ, КАКОЙ ДОКУМЕНТ ВАМ НЕОБХОДИМ
+            .headline-descr Мы в кротчайшие сроки подготовим его для вас
+      form
+        .form-top
+          .row
+            .col-md-4.col-sm-4.col-12
+              .radio-docs-item
+                .custom-control.custom-radio
+                  input#customRadio1.custom-control-input(type='radio', name='customRadio')
+                  label.custom-control-label(for='customRadio1') Документы в суд
+                  span.description Исковое заявление, отзыв на исковое заявление, ходатайство, жалоба на решение суда и пр.
+            .col-md-4.col-sm-4.col-12
+              .radio-docs-item
+                .custom-control.custom-radio
+                  input#customRadio1.custom-control-input(type='radio', name='customRadio')
+                  label.custom-control-label(for='customRadio1') Претензии потребителей
+                  span.description Претензии на возврат денег за товар, претензии в страховую, в банк, к ЖКХ и пр.
+            .col-md-4.col-sm-4.col-12
+              .radio-docs-item
+                .custom-control.custom-radio
+                  input#customRadio1.custom-control-input(type='radio', name='customRadio')
+                  label.custom-control-label(for='customRadio1') Регистрация бизнеса
+                  span.description Комплекты документов для регистрации ООО, ИП, ТСЖ и др.
+            .col-md-4.col-sm-4.col-12
+              .radio-docs-item
+                .custom-control.custom-radio
+                  input#customRadio1.custom-control-input(type='radio', name='customRadio')
+                  label.custom-control-label(for='customRadio1') Жалоба на чиновника
+                  span.description Жалоба на действия должностного лица, судебного пристава, сотрудника ГИБДД и пр.
+            .col-md-4.col-sm-4.col-12
+              .radio-docs-item
+                .custom-control.custom-radio
+                  input#customRadio1.custom-control-input(type='radio', name='customRadio')
+                  label.custom-control-label(for='customRadio1') Договоры и соглашения
+                  span.description Договоры аренды, подряда, купли-продажи, займа, комиссии и пр.
+            .col-md-4.col-sm-4.col-12
+              .radio-docs-item
+                .custom-control.custom-radio
+                  input#customRadio1.custom-control-input(type='radio', name='customRadio')
+                  label.custom-control-label(for='customRadio1') Прочие
+                  span.description Любой другой документ. Вы можете описать его самостоятельно
+        .form-bottom
+          .row
+            .col-12 Lorem ipsum dolor sit amet consectetur, adipisicing elit. In commodi molestiae assumenda, fugiat velit deleniti tempore officiis vel veritatis, consequatur debitis consectetur quasi, ut quibusdam culpa explicabo eligendi sunt. Omnis.
+      .row
+        .col-12
+          .headline-wrap
+            .headline-title НЕСКОЛЬКО ПОЛЕЗНЫХ СТАТЕЙ ПО ЗЕМЕЛЬНОМУ ПРАВУ
+            .headline-descr Возможно наш опыт поможет вам в решении важных вопросов
+                
+          
+      
+
+
+        

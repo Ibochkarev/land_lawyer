@@ -108,39 +108,26 @@ input:focus {
   box-shadow: none !important;
 }
 
-section {
-  padding: 25px 0;
+.headline-wrap {
+  padding: 48px 0;
+  text-align: center;
 
-  .sec-title {
-    margin-bottom: 20px;
-
-    .section_title {
-      font-family: 'lato-bold', sans-serif;
-      font-style: normal;
-      font-weight: bold;
-      line-height: 92px;
-      font-size: 24px;
-      text-transform: uppercase;
-      text-align: left;
-      color: $mineShaft;
-    }
-
+  .headline-title {
+    color: $tropaz;
+    font-family: Helvetica;
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
   }
 
-  .sec-descr {
-    line-height: 27px;
-    font-size: 16px;
-    margin-bottom: 20px;
+  .headline-descr {
+    color: $tundora;
+    font-family: Helvetica;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 0.6px;
   }
-}
-
-h1.content--title {
-  font-family: 'lato-bold', sans-serif;
-  line-height: normal;
-  font-size: 24px;
-  text-transform: uppercase;
-  color: $mineShaft;
-  margin-bottom: 20px;
 }
 
 //Модули
