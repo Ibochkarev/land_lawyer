@@ -21,9 +21,31 @@ footer.footer
                 li.footer_menu--item: a(class='footer_menu--link' href='#') Уточнение границ участка
         .col-md-3.col-sm-3.col-12
           .h3 О КОМПАНИИ
-          ul.footer_menu--list
-            li.footer_menu--item: a(class='footer_menu--link' href='./door_to_order.html') Двери на заказ
+          .footer--list
+            .footer--item
+              .footer--item__title Наши юристы
+              .footer--item__descr Более 40 ведущих юристов
+            .footer--item
+              .footer--item__title Отзывы
+              .footer--item__descr Средняя оценка 4.7
+            .footer--item
+              .footer--item__title Контакты
+              .footer--item__descr 12 офисов в Москве
         .col-md-3.col-sm-3.col-12
           .h3 МЫ НА СВЯЗИ
-          ul.footer_menu--list
-            li.footer_menu--item: a(class='footer_menu--link' href='#') остекление на заказ
+          .footer--call
+            .call__icon
+              img(src="static/images/general/call.png", alt="")
+            .call-wrap
+              .call__number
+                a(href="tel:+74951234567") +7 (495) 123 45 67
+              .call__number 
+                a(href="tel:+74951234567") +7 (495) 123 45 67
+          .footer--social
+            ul.footer--social__list
+              li.footer--social--item: a(class='link' href='#') 1
+              li.footer--social--item: a(class='link' href='#') 1
+              li.footer--social--item: a(class='link' href='#') 1
+              li.footer--social--item: a(class='link' href='#') 1
+              li.footer--social--item: a(class='link' href='#') 1
+

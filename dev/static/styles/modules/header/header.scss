@@ -16,6 +16,28 @@ header.header {
       flex-wrap: wrap;
       margin-right: -15px;
       margin-left: -15px;
+
+      &__item {
+        display: flex;
+
+        &:first-child:before {
+          display: none;
+        }
+
+        &:before {
+          content: "";
+          display: block;
+          background-image: url(/static/images/general/header_line.png);
+          width: 1px;
+          height: 29px;
+          position: relative;
+          right: 25px;
+        }
+
+        .item__icon {
+          margin-right: 13px;
+        }
+      }
     }
 
     &-title,
@@ -42,7 +64,7 @@ header.header {
   .header-middle {
     background-color: $white;
     color: $tropaz;
-    padding: 30px 0;
+    padding: 28px 0;
 
     .row {
       display: flex;
@@ -91,6 +113,10 @@ header.header {
           display: flex;
           margin-bottom: 20px;
           justify-content: flex-end;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
 
           &__icon {
             display: flex;
