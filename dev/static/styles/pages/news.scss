@@ -1,0 +1,38 @@
+.news-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 55px;
+  margin-bottom: 200px;
+
+  .news-item {
+    flex-basis: 50%;
+    margin-bottom: 60px;
+    display: flex;
+
+    &__img {
+      margin-right: 15px;
+    }
+
+    &__content {
+      max-width: 340px;
+
+      .title {
+        color: $tundora;
+        font-family: Helvetica;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0.4px;
+        margin-bottom: 5px;
+      }
+
+      .descr {
+        color: $darkBlack;
+        font-family: Helvetica;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.35px;
+      }
+    }
+  }
+}
