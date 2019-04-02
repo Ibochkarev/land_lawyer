@@ -223,24 +223,75 @@ form#form_question {
     color: $white;
   }
 
-  button.btn {
-    width: 100%;
-    color: $white;
-    font-family: Helvetica;
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 0.35px;
-    padding: 25px 15px;
-    background-color: $blue;
-    border-color: $blue;
-    outline: none;
+}
 
-    &:hover {
-      opacity: .7;
-      cursor: pointer;
-    }
+.btn {
+  width: 100%;
+  color: $white;
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.35px;
+  padding: 25px 15px;
+  background-color: $blue;
+  border-color: $blue;
+  outline: none;
+
+  &:hover {
+    opacity: .7;
+    cursor: pointer;
+  }
+}
+
+#map_contact {
+  width: 100%;
+
+  iframe {
+    height: 450px !important;
   }
 
+  .map_container {
+    position: relative;
+
+    .content_block {
+      position: absolute;
+      left: 0;
+      bottom: 25px;
+      height: 289px;
+      background-color: rgba(0, 0, 0, 0.51);
+      padding: 40px 30px 20px 30px;
+
+      &--item {
+        color: $white;
+        margin-bottom: 15px;
+
+        .content_block--title {
+          font-size: 18px;
+          font-weight: 700;
+          letter-spacing: 0.45px;
+        }
+
+        .content_block--descr {
+          font-weight: 400;
+          letter-spacing: 0.4px;
+          font-size: 18px;
+
+          a {
+            display: block;
+            color: $white;
+          }
+        }
+      }
+
+      a.btn {
+        display: block;
+
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
 }
 
 //Модули
