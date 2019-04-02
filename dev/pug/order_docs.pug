@@ -13,7 +13,7 @@ block content
           .headline-wrap
             .headline-title УКАЖИТЕ, КАКОЙ ДОКУМЕНТ ВАМ НЕОБХОДИМ
             .headline-descr Мы в кротчайшие сроки подготовим его для вас
-      form(action="")
+      form#form-order(action="")
         .form-top
           .row
             .col-md-4.col-sm-4.col-12
@@ -54,7 +54,23 @@ block content
                   span.description Любой другой документ. Вы можете описать его самостоятельно
         .form-bottom
           .row
-            .col-12 
+            .col-md-6.col-sm-6.col-12
+              select#type(class="custom-select", name="type")
+                option Выберите тип документа
+                option 2
+                option 3
+                option 4
+                option 5
+              input#info(type="text", name="info", placeholder="Что необходимо сделать? (своими словами)")
+              textarea#message(name="message", cols="30", rows="13", placeholder="Опишите пожалуйста подробно, что необходимо сделать")
+            .col-md-5.col-sm-6.col-12.offset-md-1
+              input#name(type="text", name="name", placeholder="Ваше имя")
+              input#email(type="text", name="email", placeholder="E-mail")
+              input#phone(type="tel", name="phone", placeholder="+7")
+              span.note_text Отправляя данные вы соглашаетесь с Согласием на обработку ПДн, Политикой обработки ПДн и Пользовательским соглашением.
+              button(type="submit", value="", class="btn btn-blue") ЗАКАЗАТЬ ДОКУМЕНТ
+              a(class='link' href='tel:+74951234567') При возникновении вопросов звоните нам на +7 (495) 123-45-67
+
               
       .row
         .col-12

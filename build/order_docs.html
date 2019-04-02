@@ -89,7 +89,7 @@
                 </div>
               </div>
             </div>
-            <form action="">
+            <form id="form-order" action="">
               <div class="form-top">
                 <div class="row">
                   <div class="col-md-4 col-sm-4 col-12">
@@ -144,7 +144,23 @@
               </div>
               <div class="form-bottom">
                 <div class="row">
-                  <div class="col-12"> </div>
+                  <div class="col-md-6 col-sm-6 col-12">
+                    <select class="custom-select" id="type" name="type">
+                      <option>Выберите тип документа</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                    <input id="info" type="text" name="info" placeholder="Что необходимо сделать? (своими словами)">
+                    <textarea id="message" name="message" cols="30" rows="13" placeholder="Опишите пожалуйста подробно, что необходимо сделать"></textarea>
+                  </div>
+                  <div class="col-md-5 col-sm-6 col-12 offset-md-1">
+                    <input id="name" type="text" name="name" placeholder="Ваше имя">
+                    <input id="email" type="text" name="email" placeholder="E-mail">
+                    <input id="phone" type="tel" name="phone" placeholder="+7"><span class="note_text">Отправляя данные вы соглашаетесь с Согласием на обработку ПДн, Политикой обработки ПДн и Пользовательским соглашением.</span>
+                    <button class="btn btn-blue" type="submit" value="">ЗАКАЗАТЬ ДОКУМЕНТ</button><a class="link" href="tel:+74951234567">При возникновении вопросов звоните нам на +7 (495) 123-45-67</a>
+                  </div>
                 </div>
               </div>
             </form>

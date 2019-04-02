@@ -405,6 +405,86 @@ form#form_question {
   }
 }
 
+#form-order {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  select,
+  input,
+  textarea {
+    background: #0000;
+    border-color: $darkBlack;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+    color: #a5a5a5;
+    width: 100%;
+    padding: 15px 18px 15px 18px;
+    margin-bottom: 22px;
+  }
+
+  ::-webkit-input-placeholder {
+    color: #a5a5a5;
+  }
+
+  ::-moz-placeholder {
+    color: #a5a5a5
+  }
+
+  /* Firefox 19+ */
+  :-moz-placeholder {
+    color: #a5a5a5;
+  }
+
+  /* Firefox 18- */
+  :-ms-input-placeholder {
+    color: #a5a5a5;
+  }
+
+  span.note_text {
+    display: block;
+    color: #686868;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.35px;
+    margin-bottom: 33px;
+  }
+
+  a {
+    display: block;
+    color: $tropaz;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+  }
+
+  .btn {
+    width: 100%;
+    color: $white;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+    padding: 25px 15px;
+    background-color: $red;
+    border-color: $red;
+    outline: none;
+    width: max-content;
+    margin-bottom: 20px;
+
+    &:hover {
+      opacity: .7;
+      cursor: pointer;
+    }
+  }
+
+}
+
+
+
 #map_contact {
   width: 100%;
 
@@ -499,7 +579,8 @@ form#form_question {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-    &__icons{
+
+    &__icons {
       margin-right: 10px;
     }
   }
