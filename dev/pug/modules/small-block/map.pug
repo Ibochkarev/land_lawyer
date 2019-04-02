@@ -1,7 +1,17 @@
 section#map
   .container
     .row
-    .col-12
-      .headline-wrap
-        .headline-title ВЫБЕРИТЕ УДОБНЫЙ ДЛЯ ВАС ОФИС
-        .headline-descr Приезжайте к нам для более подбробной бесплатной консультации. Будем рады вас видеть!
+      .col-12
+        .headline-wrap
+          .headline-title ВЫБЕРИТЕ УДОБНЫЙ ДЛЯ ВАС ОФИС
+          .headline-descr Приезжайте к нам для более подбробной бесплатной консультации. Будем рады вас видеть!
+  <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac81e4789a5a8783757ec4c6c18775e85895dd86461a85700c4284bf6a6877ff4&amp;source=constructor" width="100%" height="450" frameborder="0"></iframe>
+  .container
+    .row
+      .col-md-5.col-sm-6.col-12.map_container
+        .content_block
+          form(action="")
+            span Не ждите, запишитесь на консультацию прямо сейчас, ведь первичная консультация всегда будет для вас бесплатной!
+            input#name(type="text", name="name", placeholder="Ваше имя")
+            input#phone(type="tel", name="phone", placeholder="Контактный телефон")
+            button(type="submit", value="", class="btn btn-blue") ЗАПИСАТЬСЯ НА БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ

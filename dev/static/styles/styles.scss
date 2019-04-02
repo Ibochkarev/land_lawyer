@@ -243,6 +243,168 @@ form#form_question {
   }
 }
 
+#info-block {
+  .service-block__content {
+    padding-left: 70px;
+
+    .service-block__wrap {
+      margin: 70px 0 10px 0;
+      max-width: 480px;
+
+      .title {
+        color: $white;
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: 0.9px;
+        margin-bottom: 10px;
+      }
+
+      .descr {
+        color: $white;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0.4px;
+        margin-bottom: 60px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        span {
+          max-width: 310px;
+          display: block;
+          margin-bottom: 35px;
+          color: $white;
+          font-family: Helvetica;
+          font-size: 18px;
+          font-weight: 400;
+          letter-spacing: 0.45px;
+        }
+
+        input {
+          background: #0000;
+          border-color: $white;
+          font-family: Helvetica;
+          font-size: 14px;
+          font-weight: 400;
+          letter-spacing: 0.35px;
+          color: $white;
+          width: 360px;
+          padding: 15px 18px 15px 18px;
+          margin-bottom: 22px;
+        }
+
+        button {
+          padding: 27px 30px;
+          width: max-content;
+          margin-bottom: 40px;
+        }
+
+        ::-webkit-input-placeholder {
+          color: $white;
+        }
+
+        ::-moz-placeholder {
+          color: $white;
+        }
+
+        /* Firefox 19+ */
+        :-moz-placeholder {
+          color: $white;
+        }
+
+        /* Firefox 18- */
+        :-ms-input-placeholder {
+          color: $white;
+        }
+
+      }
+
+      .note-block {
+        border-top: 1px solid $white;
+        padding-top: 10px;
+        color: $white;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.35px;
+      }
+    }
+  }
+}
+
+#map {
+  width: 100%;
+
+  iframe {
+    height: 450px !important;
+  }
+
+  .map_container {
+    position: relative;
+
+    .content_block {
+      position: absolute;
+      left: 0;
+      bottom: 25px;
+      background-color: rgba(0, 0, 0, 0.51);
+      padding: 20px 30px;
+
+      form {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        span {
+          max-width: 310px;
+          display: block;
+          margin-bottom: 35px;
+          color: $white;
+          font-family: Helvetica;
+          font-size: 18px;
+          font-weight: 400;
+          letter-spacing: 0.45px;
+        }
+
+        input,
+        textarea {
+          background: #0000;
+          border-color: $white;
+          font-family: Helvetica;
+          font-size: 14px;
+          font-weight: 400;
+          letter-spacing: 0.35px;
+          color: $white;
+          width: 100%;
+          padding: 15px 18px 15px 18px;
+          margin-bottom: 22px;
+        }
+
+        ::-webkit-input-placeholder {
+          color: $white;
+        }
+
+        ::-moz-placeholder {
+          color: $white;
+        }
+
+        /* Firefox 19+ */
+        :-moz-placeholder {
+          color: $white;
+        }
+
+        /* Firefox 18- */
+        :-ms-input-placeholder {
+          color: $white;
+        }
+
+      }
+
+    }
+  }
+}
+
 #map_contact {
   width: 100%;
 
@@ -290,6 +452,55 @@ form#form_question {
           color: $white;
         }
       }
+    }
+  }
+
+}
+
+#service-content {
+  padding: 100px 0 70px 0;
+
+  .content-wrap {
+    .title {
+      color: $tundora;
+      font-size: 24px;
+      font-weight: 400;
+      letter-spacing: 0.6px;
+      margin-bottom: 25px;
+    }
+
+    p {
+      margin-bottom: 25px;
+      color: $tundora;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.35px;
+    }
+
+    h4 {
+      color: $tropaz;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0.45px;
+    }
+  }
+}
+
+.list-block__wrap {
+  .right-block-title {
+    color: $tundora;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.45px;
+    margin-bottom: 30px;
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    &__icons{
+      margin-right: 10px;
     }
   }
 }
