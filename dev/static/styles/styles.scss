@@ -633,6 +633,35 @@ form#form_question {
   }
 }
 
+#slider-reasons .slider_wrap {
+  text-align: center;
+
+  .slider_item {
+    &--img {
+      img {
+        width: 70px;
+        height: 70px;
+        margin: 0 auto;
+      }
+    }
+
+    &--title {
+      color: $mineShaft;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0.45px;
+    }
+
+    &--item {
+      color: $mineShaft;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 18px;
+      letter-spacing: 0.35px;
+    }
+  }
+}
+
 ul.slick-dots {
   text-align: center;
   margin-top: 50px;
@@ -674,6 +703,8 @@ ul.slick-dots {
   height: 1px;
   background-image: url(../images/general/slider_img.png);
 }
+
+
 
 
 //Модули
