@@ -7,7 +7,7 @@ let uglify = require('gulp-uglify'),
 
 module.exports = function () {
   $.gulp.task('libsJS:dev', () => {
-    return $.gulp.src(['node_modules/fotorama/fotorama.js',
+    return $.gulp.src([
         'node_modules/slick-carousel/slick/slick.min.js',
         'node_modules/bootstrap/dist/js/bootstrap.min.js'
       ])
@@ -16,7 +16,7 @@ module.exports = function () {
   });
 
   $.gulp.task('libsJS:build', () => {
-    return $.gulp.src(['node_modules/fotorama/fotorama.js',
+    return $.gulp.src([
         'node_modules/slick-carousel/slick/slick.min.js',
         'node_modules/bootstrap/dist/js/bootstrap.min.js'
       ])

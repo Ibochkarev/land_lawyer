@@ -586,6 +586,96 @@ form#form_question {
   }
 }
 
+.slider_wrap {
+
+  .slider_item {
+
+    &--img {
+      position: relative;
+      margin-bottom: 24px;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      span.date {
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: $white;
+        background-color: $red;
+        padding: 12px 13px;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.35px;
+      }
+    }
+
+    &--title {
+      margin-bottom: 19px;
+
+      a {
+        color: $tropaz;
+        font-size: 16px;
+        font-weight: 400;
+        text-decoration: underline;
+        letter-spacing: 0.4px;
+      }
+    }
+
+    &--text p {
+      color: $tundora;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.35px;
+    }
+  }
+}
+
+ul.slick-dots {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 60px;
+
+  li {
+    display: inline-block;
+    margin-right: 16px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    button {
+      background: #0000;
+      border-color: $boulder;
+      width: 16px;
+      height: 16px;
+      color: #0000;
+      border-radius: 50%;
+      font-size: 6px;
+    }
+
+    &.slick-active {
+      button {
+        background-color: $boulder;
+      }
+    }
+  }
+}
+
+#slider-post::after {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  content: '';
+  text-align: center;
+  width: 946px;
+  height: 1px;
+  background-image: url(../images/general/slider_img.png);
+}
+
+
 //Модули
 @import "modules/modules";
 @import "media";
