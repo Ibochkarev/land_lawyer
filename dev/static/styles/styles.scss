@@ -749,6 +749,63 @@ ul.slick-dots {
   }
 }
 
+#list-question {
+  background-color: $lightBlue;
+
+  .headline-wrap {
+    background-color: $tropaz;
+    padding: 35px 0;
+
+    .headline-descr {
+      color: $white;
+      font-size: 24px;
+      letter-spacing: 0.6px;
+    }
+  }
+
+  .list-wrap {
+    color: $tundora;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    padding: 55px 0 48px 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    .item {
+      flex-basis: 33.3%;
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+
+      &__icons {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .note {
+    color: $tundora;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+    padding: 0 0 34px 0;
+    max-width: 500px;
+
+    &::before {
+      display: block;
+      position: relative;
+      top: -10px;
+      content: '';
+      text-align: center;
+      width: 470px;
+      height: 1px;
+      background-image: url(../images/general/note_line.jpg);
+    }
+  }
+}
+
 
 //Модули
 @import "modules/modules";
