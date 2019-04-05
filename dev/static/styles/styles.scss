@@ -633,31 +633,36 @@ form#form_question {
   }
 }
 
-#slider-reasons .slider_wrap {
-  text-align: center;
+#slider-reasons {
+  background-color: $wildSand;
+  padding-bottom: 20px;
 
-  .slider_item {
-    &--img {
-      img {
-        width: 70px;
-        height: 70px;
-        margin: 0 auto;
+  .slider_wrap {
+    text-align: center;
+
+    .slider_item {
+      &--img {
+        img {
+          width: 70px;
+          height: 70px;
+          margin: 0 auto;
+        }
       }
-    }
 
-    &--title {
-      color: $mineShaft;
-      font-size: 18px;
-      font-weight: 700;
-      letter-spacing: 0.45px;
-    }
+      &--title {
+        color: $mineShaft;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.45px;
+      }
 
-    &--item {
-      color: $mineShaft;
-      font-size: 14px;
-      font-weight: 300;
-      line-height: 18px;
-      letter-spacing: 0.35px;
+      &--item {
+        color: $mineShaft;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 18px;
+        letter-spacing: 0.35px;
+      }
     }
   }
 }
@@ -704,7 +709,45 @@ ul.slick-dots {
   background-image: url(../images/general/slider_img.png);
 }
 
+#frequent_appeals {
+  margin-bottom: 80px;
 
+  .frequent_appeals_wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .frequent_appeals_item {
+      flex-basis: 49%;
+      margin-bottom: 22px;
+
+      .wrapper {
+        position: relative;
+        padding: 32px;
+
+        .count {
+          color: $white;
+          background-color: $red;
+          padding: 7px 7px;
+          font-size: 14px;
+          font-weight: 400;
+          letter-spacing: 0.35px;
+          width: max-content;
+          margin-bottom: 40px;
+        }
+
+        .text {
+          width: 270px;
+          color: $mineShaft;
+          font-size: 22px;
+          font-weight: 500;
+          letter-spacing: 0.55px;
+          line-height: normal;
+        }
+      }
+    }
+  }
+}
 
 
 //Модули
