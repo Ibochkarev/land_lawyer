@@ -17,7 +17,6 @@ body {
   min-width: 320px;
   position: relative;
   line-height: 1.5;
-  font-family: $default-font;
   overflow-x: hidden;
   color: $mineShaft;
   background: $white;
@@ -806,6 +805,28 @@ ul.slick-dots {
   }
 }
 
+#clients {
+  .slider_wrap {
+    text-align: center;
+
+    .slider_item {
+      &--img {
+        width: 168px;
+        height: 168px;
+        border: 1px solid $mercury;
+        background-color: $white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}
 
 //Модули
 @import "modules/modules";

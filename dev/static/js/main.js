@@ -14,4 +14,11 @@ $(document).ready(function () {
     arrows: false
   });
 
+  $('#clients .slider_wrap').slick({
+    slidesToShow: 6,
+    slidesToScroll: 2,
+    dots: true,
+    arrows: false
+  });
+
 });
