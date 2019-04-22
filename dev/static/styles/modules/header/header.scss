@@ -1,6 +1,5 @@
 .header {
   background-color: $white;
-  border-bottom: 1px solid #000;
 
   .header-top {
     background-color: $blue;
@@ -164,6 +163,101 @@
             }
           }
         }
+      }
+    }
+  }
+
+  .header-bottom-wrap {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1140px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    nav.navbar {
+      background-color: $tropaz;
+      padding: 0;
+      // width: 100%;
+
+      .navbar-brand {
+        color: $white;
+      }
+
+      ul.navbar-nav {
+        justify-content: space-around;
+        align-items: center;
+        display: flex;
+        // width: -webkit-fill-available;
+
+        li.nav-item.active,
+        li.nav-item:hover {
+          background-color: $blue;
+          transition: all 250ms ease;
+
+          .nav-link {
+            color: $white;
+          }
+        }
+
+        .nav-link {
+          text-transform: uppercase;
+          color: $white;
+          padding: 25px 17px;
+        }
+      }
+
+      .dropdown-menu {
+        background-color: $blue;
+        border-radius: 0;
+        border: 1px solid $blue;
+        margin: 0;
+        width: 722px;
+
+        .dropdown-menu-wrap {
+          display: flex;
+          flex-wrap: wrap;
+          padding: 22px 30px 44px 30px;
+
+          .dropdown-item {
+            color: $white;
+            height: 50px;
+            flex-basis: 50%;
+            margin-top: 15px;
+            padding-left: 44px;
+            white-space: initial;
+            position: relative;
+
+            &::before {
+              content: '';
+              width: 29px;
+              height: 37px;
+              position: absolute;
+              left: 0;
+              top: 7px;
+              fill: white;
+              background-image: url(../images/general/ic_menu.png);
+            }
+
+            &:hover {
+              background-color: transparent;
+              opacity: 0.8;
+            }
+          }
+        }
+      }
+    }
+
+    .consult-wrap {
+      .consult-link {
+        background: $red;
+        color: $white;
+        display: block;
+        padding: 25px 17px;
+        text-align: center;
+        text-transform: uppercase;
+
+        &:hover {}
       }
     }
   }

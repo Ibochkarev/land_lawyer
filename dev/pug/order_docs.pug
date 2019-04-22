@@ -19,38 +19,38 @@ block content
             .col-md-4.col-sm-4.col-12
               .radio-docs-item
                 .custom-control.custom-radio
-                  input#customRadio1.custom-control-input(type='radio', name='customRadio')
-                  label.custom-control-label(for='customRadio1') Документы в суд
+                  input#service1.custom-control-input(type='radio', name='customRadio')
+                  label.custom-control-label(for='service1') Документы в суд
                   span.description Исковое заявление, отзыв на исковое заявление, ходатайство, жалоба на решение суда и пр.
             .col-md-4.col-sm-4.col-12
               .radio-docs-item
                 .custom-control.custom-radio
-                  input#customRadio1.custom-control-input(type='radio', name='customRadio')
-                  label.custom-control-label(for='customRadio1') Претензии потребителей
+                  input#service2.custom-control-input(type='radio', name='customRadio')
+                  label.custom-control-label(for='service2') Претензии потребителей
                   span.description Претензии на возврат денег за товар, претензии в страховую, в банк, к ЖКХ и пр.
             .col-md-4.col-sm-4.col-12
               .radio-docs-item
                 .custom-control.custom-radio
-                  input#customRadio1.custom-control-input(type='radio', name='customRadio')
-                  label.custom-control-label(for='customRadio1') Регистрация бизнеса
+                  input#service3.custom-control-input(type='radio', name='customRadio')
+                  label.custom-control-label(for='service3') Регистрация бизнеса
                   span.description Комплекты документов для регистрации ООО, ИП, ТСЖ и др.
             .col-md-4.col-sm-4.col-12
               .radio-docs-item
                 .custom-control.custom-radio
-                  input#customRadio1.custom-control-input(type='radio', name='customRadio')
-                  label.custom-control-label(for='customRadio1') Жалоба на чиновника
+                  input#service4.custom-control-input(type='radio', name='customRadio')
+                  label.custom-control-label(for='service4') Жалоба на чиновника
                   span.description Жалоба на действия должностного лица, судебного пристава, сотрудника ГИБДД и пр.
             .col-md-4.col-sm-4.col-12
               .radio-docs-item
                 .custom-control.custom-radio
-                  input#customRadio1.custom-control-input(type='radio', name='customRadio')
-                  label.custom-control-label(for='customRadio1') Договоры и соглашения
+                  input#service5.custom-control-input(type='radio', name='customRadio')
+                  label.custom-control-label(for='service5') Договоры и соглашения
                   span.description Договоры аренды, подряда, купли-продажи, займа, комиссии и пр.
             .col-md-4.col-sm-4.col-12
               .radio-docs-item
                 .custom-control.custom-radio
-                  input#customRadio1.custom-control-input(type='radio', name='customRadio')
-                  label.custom-control-label(for='customRadio1') Прочие
+                  input#service6.custom-control-input(type='radio', name='customRadio')
+                  label.custom-control-label(for='service6') Прочие
                   span.description Любой другой документ. Вы можете описать его самостоятельно
         .form-bottom
           .row
@@ -66,9 +66,9 @@ block content
             .col-md-5.col-sm-6.col-12.offset-md-1
               input#name(type="text", name="name", placeholder="Ваше имя")
               input#email(type="text", name="email", placeholder="E-mail")
-              input#phone(type="tel", name="phone", placeholder="+7")
+              input#phone(type="tel", name="phone", placeholder="+7" data-inputmask="'mask': '+7 (999) 999 99 99'")
               span.note_text Отправляя данные вы соглашаетесь с Согласием на обработку ПДн, Политикой обработки ПДн и Пользовательским соглашением.
-              button(type="submit", value="", class="btn btn-blue") ЗАКАЗАТЬ ДОКУМЕНТ
+              button(type="submit", value="", class="btn") ЗАКАЗАТЬ ДОКУМЕНТ
               a(class='link' href='tel:+74951234567') При возникновении вопросов звоните нам на +7 (495) 123-45-67
 
               
