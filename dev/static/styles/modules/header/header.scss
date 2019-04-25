@@ -2,7 +2,7 @@
   background-color: $white;
 
   .header-top {
-    background-color: $blue;
+    background-color: $tropaz;
     color: $white;
     height: 50px;
     display: flex;
@@ -203,7 +203,7 @@
         .nav-link {
           text-transform: uppercase;
           color: $white;
-          padding: 25px 17px;
+          padding: 25px 17px 22px 17px;
         }
       }
 
@@ -212,7 +212,7 @@
         border-radius: 0;
         border: 1px solid $blue;
         margin: 0;
-        width: 722px;
+        width: 707px;
 
         .dropdown-menu-wrap {
           display: flex;
@@ -221,8 +221,8 @@
 
           .dropdown-item {
             color: $white;
-            height: 50px;
             flex-basis: 50%;
+            line-height: normal;
             margin-top: 15px;
             padding-left: 44px;
             white-space: initial;
@@ -234,9 +234,10 @@
               height: 37px;
               position: absolute;
               left: 0;
-              top: 7px;
+              top: 25%;
               fill: white;
               background-image: url(../images/general/ic_menu.png);
+              transform: translateY(-25%);
             }
 
             &:hover {
@@ -253,11 +254,18 @@
         background: $red;
         color: $white;
         display: block;
-        padding: 25px 17px;
+        padding: 25px 17px 22px 17px;
         text-align: center;
         text-transform: uppercase;
+        border: 0;
 
-        &:hover {}
+        &:hover {
+          opacity: 0.8;
+        }
+
+        &:focus {
+          outline: 0;
+        }
       }
     }
   }

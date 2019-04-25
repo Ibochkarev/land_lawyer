@@ -1,0 +1,17 @@
+#callModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+  .modal-dialog.modal-dialog-centered(role='document')
+    .modal-content
+      .modal-header
+        h5#exampleModalLabel.modal-title Записаться на консультацию
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+          span(aria-hidden='true') ×
+      .modal-body
+        form
+          .form-group
+            label
+              input#name(type="text", name="name", placeholder="Ваше имя")
+          .form-group
+            label
+              input#email(type="tel", name="phone", placeholder="Контактный телефон", data-inputmask="'mask': '+7 (999) 999 99 99'")
+          .form-group
+            button(type='submit', class="btn btn-blue") Отправить

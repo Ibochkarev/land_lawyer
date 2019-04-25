@@ -96,7 +96,9 @@
                 </ul>
               </div>
             </nav>
-            <div class="consult-wrap"> <a class="consult-link" href="#">Бесплатная консультация</a></div>
+            <div class="consult-wrap"> 
+              <button class="consult-link" data-toggle="modal" data-target="#callModal">Бесплатная консультация</button>
+            </div>
           </div>
         </div>
       </header>
@@ -180,7 +182,7 @@
                   <div class="col-md-5 col-sm-6 col-12 offset-md-1">
                     <input id="name" type="text" name="name" placeholder="Ваше имя">
                     <input id="email" type="text" name="email" placeholder="E-mail">
-                    <input id="phone" type="tel" name="phone" placeholder="+7" data-inputmask="'mask': '+7 (999) 9999 99 99'"><span class="note_text">Отправляя данные вы соглашаетесь с Согласием на обработку ПДн, Политикой обработки ПДн и Пользовательским соглашением.</span>
+                    <input id="phone" type="tel" name="phone" placeholder="+7" data-inputmask="'mask': '+7 (999) 999 99 99'"><span class="note_text">Отправляя данные вы соглашаетесь с Согласием на обработку ПДн, Политикой обработки ПДн и Пользовательским соглашением.</span>
                     <button class="btn" type="submit" value="">ЗАКАЗАТЬ ДОКУМЕНТ</button><a class="link" href="tel:+74951234567">При возникновении вопросов звоните нам на +7 (495) 123-45-67</a>
                   </div>
                 </div>
@@ -254,7 +256,7 @@
                 <div class="content_block">
                   <form action=""><span>Не ждите, запишитесь на консультацию прямо сейчас, ведь первичная консультация всегда будет для вас бесплатной!</span>
                     <input id="name" type="text" name="name" placeholder="Ваше имя">
-                    <input id="phone" type="tel" name="phone" placeholder="Контактный телефон">
+                    <input id="phone" type="tel" name="phone" placeholder="Контактный телефон" data-inputmask="'mask': '+7 (999) 999 99 99'">
                     <button class="btn btn-blue" type="submit" value="">ЗАПИСАТЬСЯ НА БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ</button>
                   </form>
                 </div>
@@ -320,11 +322,11 @@
                 </div>
                 <div class="footer--social">
                   <ul class="footer--social__list">
-                    <li class="footer--social--item"><a class="link bg-fb" href="#"></a></li>
-                    <li class="footer--social--item"><a class="link bg-tw" href="#"></a></li>
-                    <li class="footer--social--item"><a class="link bg-mail" href="mailto:test@mail.ru"></a></li>
-                    <li class="footer--social--item"><a class="link bg-phone" href="tel:+79999999999"></a></li>
-                    <li class="footer--social--item"><a class="link bg-gplus" href="#"></a></li>
+                    <li class="footer--social--item"><a class="link bg-fb" href="#" aria-label="Facebook"></a></li>
+                    <li class="footer--social--item"><a class="link bg-tw" href="#" aria-label="Twitter"></a></li>
+                    <li class="footer--social--item"><a class="link bg-mail" href="mailto:test@mail.ru" aria-label="Email"></a></li>
+                    <li class="footer--social--item"><a class="link bg-phone" href="tel:+79999999999" aria-label="Phone"></a></li>
+                    <li class="footer--social--item"><a class="link bg-gplus" href="#" aria-label="Google plus"></a></li>
                   </ul>
                 </div>
               </div>
@@ -332,6 +334,33 @@
           </div>
         </div>
       </footer>
+      <div class="modal fade" id="callModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Записаться на консультацию</h5>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label>
+                    <input id="name" type="text" name="name" placeholder="Ваше имя">
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label>
+                    <input id="email" type="tel" name="phone" placeholder="Контактный телефон" data-inputmask="'mask': '+7 (999) 999 99 99'">
+                  </label>
+                </div>
+                <div class="form-group">
+                  <button class="btn btn-blue" type="submit">Отправить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="static/js/jquery-3.3.1.min.js"></script>
     <script src="static/js/popper.min.js"></script>

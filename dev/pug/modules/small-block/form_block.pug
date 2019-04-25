@@ -20,6 +20,6 @@ section#block_form(style="background-image: url(static/images/general/bg_block_f
       .col-md-4.col-sm-5.col-12
         form#form_question(action="")
           input#name(type="text", name="name", placeholder="Ваше имя")
-          input#phone(type="tel", name="phone", placeholder="Контактный телефон")
+          input#phone(type="tel", name="phone", placeholder="Контактный телефон", data-inputmask="'mask': '+7 (999) 999 99 99'")
           textarea#message(name="message", cols="30", rows="5" placeholder="Суть вопроса")
           button(type="submit", value="", class="btn btn-blue") ПОЛУЧИТЬ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ

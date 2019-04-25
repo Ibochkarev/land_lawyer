@@ -95,4 +95,8 @@ $(document).ready(function () {
 
   $(":input").inputmask();
 
+  $('[name="customRadio"]').change(function () {
+    $('[name="service"]').val($(this).val());
+  });
+
 });
