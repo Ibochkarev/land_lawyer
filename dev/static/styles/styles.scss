@@ -862,75 +862,279 @@ ul.slick-dots {
   }
 }
 
-.reviews-list {
-  margin-bottom: 50px;
+section#reviews-content {
+  margin-top: 60px;
 
-  .review-item {
-    background-color: #f8f6f6;
-    padding: 28px;
-    margin-bottom: 20px;
+  .starrating>input {
+    display: none;
+  }
 
-    &:last-child {
-      margin-bottom: 0;
+  .starrating>label:before {
+    content: "★";
+    margin: 2px;
+    font-size: 2em;
+    font-family: FontAwesome;
+    display: inline-block;
+  }
+
+  .starrating>label {
+    color: #222222;
+    margin-bottom: 0;
+  }
+
+  .starrating>input:checked~label {
+    color: $red;
+  }
+
+  .starrating>input:hover~label {
+    color: $red;
+  }
+
+  .reviews-content {
+    margin-bottom: 50px;
+
+    .reviews-block {
+      box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.11);
+
+      &-header {
+        background-color: #f8f6f6;
+        height: 50px;
+      }
+
+      &-content {
+        padding: 30px;
+
+        .qunt-rating {
+          color: $tundora;
+          font-family: Helvetica;
+          font-size: 18px;
+          font-weight: 400;
+          letter-spacing: 0.45px;
+
+          span {
+            font-size: 36px;
+            letter-spacing: 0.9px;
+          }
+        }
+
+        span.title {
+          display: block;
+          color: $tundora;
+          font-family: Helvetica;
+          font-size: 16px;
+          font-weight: 400;
+          letter-spacing: 0.4px;
+          margin-bottom: 15px;
+        }
+
+        span.note {
+          color: $tundora;
+          display: block;
+          font-family: Helvetica;
+          font-size: 12px;
+          font-weight: 300;
+          line-height: normal;
+          letter-spacing: 0.4px;
+        }
+
+        .progress-wrap {
+          max-width: 350px;
+
+          .progress-item {
+            display: flex;
+            margin-bottom: 13px;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+
+
+            .star-5,
+            .star-4,
+            .star-3,
+            .star-2,
+            .star-1 {
+              position: relative;
+              margin-right: 15px;
+              width: 29px;
+
+              &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 29px;
+                height: 29px;
+                left: 0;
+                top: -3px;
+              }
+            }
+
+            .star-1 {
+              &::before {
+                background-image: url(../images/general/star-1.png);
+              }
+            }
+
+            .star-2 {
+              &::before {
+                background-image: url(../images/general/star-2.png);
+              }
+            }
+
+            .star-3 {
+              &::before {
+                background-image: url(../images/general/star-3.png);
+              }
+            }
+
+            .star-4 {
+              &::before {
+                background-image: url(../images/general/star-4.png);
+              }
+            }
+
+            .star-5 {
+              &::before {
+                background-image: url(../images/general/star-5.png);
+              }
+            }
+
+            .progress {
+              width: 80%;
+              height: 22px;
+              border-radius: 0;
+
+              &-bar {
+                background-color: $red;
+              }
+            }
+
+            .procent {
+              margin-left: 10px;
+              width: 10%;
+              color: $tundora;
+              font-family: Helvetica;
+              font-size: 14px;
+              font-weight: 400;
+              letter-spacing: 0.42px;
+            }
+          }
+        }
+
+        button {
+          margin-bottom: 30px;
+          background: $red;
+          color: $white;
+          display: block;
+          padding: 20px 65px 20px 65px;
+          text-align: center;
+          text-transform: uppercase;
+          border: 0;
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+
+        .text_form {
+          color: $tundora;
+          font-size: 14px;
+          font-weight: 300;
+          line-height: normal;
+          letter-spacing: 0.35px
+        }
+      }
+
+      &-footer {
+        background-color: #f8f6f6;
+        height: 50px;
+        padding: 15px 28px;
+
+        .sort-title {
+          color: $tundora;
+          font-family: Helvetica;
+          font-size: 16px;
+          font-weight: 400;
+          letter-spacing: 0.4px;
+          margin-right: 20px;
+        }
+
+        .sort-link {
+          color: $tundora;
+          font-family: Helvetica;
+          font-size: 14px;
+          letter-spacing: 0.35px;
+
+          &:hover {
+            opacity: .8;
+          }
+
+          span {
+            margin-left: 10px;
+            margin-right: 45px;
+            position: relative;
+
+            &::after {
+              display: block;
+              position: absolute;
+              content: '';
+              width: 15px;
+              height: 10px;
+              left: 0;
+              top: 3px;
+              background-image: url(../images/general/sort.png);
+            }
+          }
+        }
+      }
     }
+  }
 
-    &-header {
-      display: flex;
-      align-items: center;
-      margin-bottom: 30px;
+  .reviews-list {
+    margin-bottom: 50px;
 
-      .author {
-        color: $tundora;
-        font-weight: 700;
-        font-size: 16px;
-        letter-spacing: 0.4px;
-        margin-right: 12px;
-      }
+    .review-item {
+      background-color: #f8f6f6;
+      padding: 28px;
+      margin-bottom: 20px;
 
-      .starrating>input {
-        display: none;
-      }
-
-      .starrating>label:before {
-        content: "★";
-        margin: 2px;
-        font-size: 2em;
-        font-family: FontAwesome;
-        display: inline-block;
-      }
-
-      .starrating>label {
-        color: #222222;
+      &:last-child {
         margin-bottom: 0;
       }
 
-      .starrating>input:checked~label {
-        color: $red;
+      &-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+
+        .author {
+          color: $tundora;
+          font-weight: 700;
+          font-size: 16px;
+          letter-spacing: 0.4px;
+          margin-right: 12px;
+        }
       }
 
-      .starrating>input:hover~label {
-        color: $red;
+      &-content {
+        margin-bottom: 30px;
+
+        p {
+          color: $tundora;
+          font-size: 14px;
+          letter-spacing: 0.35px;
+        }
       }
-    }
 
-    &-content {
-      margin-bottom: 30px;
-
-      p {
-        color: $tundora;
+      &-footer {
+        color: $red;
         font-size: 14px;
+        font-weight: 700;
         letter-spacing: 0.35px;
-      }
-    }
 
-    &-footer {
-      color: $red;
-      font-size: 14px;
-      font-weight: 700;
-      letter-spacing: 0.35px;
-
-      p {
-        margin-bottom: 0;
+        p {
+          margin-bottom: 0;
+        }
       }
     }
   }
