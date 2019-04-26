@@ -14,7 +14,6 @@
 
 // ≥576px
 @include media-breakpoint-down(xs) {
-
   .header {
     &-top {
       display: none !important;
@@ -309,18 +308,15 @@
   }
 
   .footer-contact__wrap {
-    text-align: center;
 
     .h3 {
       margin-bottom: 5px !important;
     }
-
-    .footer--call {
-      justify-content: center !important;
-      margin-bottom: 5px !important;
-    }
   }
 
+  footer .footer__wrap .footer_menu__wrap .col {
+    flex-basis: 100%;
+  }
 }
 
 
@@ -330,7 +326,221 @@
 @include media-breakpoint-up(sm) {}
 
 // ≤768px
-@include media-breakpoint-up(md) {}
+@media(max-width: 768px) {
+
+  section#reviews-content .reviews-content .reviews-block-footer {
+
+    .sort-title,
+    .sort-link {
+      display: inline;
+    }
+
+    .navbar-brand {
+      display: none;
+    }
+  }
+
+  footer .footer__wrap {
+
+    .footer_menu__wrap {
+      margin-bottom: 20px;
+
+      .col {
+        flex-basis: 100%;
+      }
+    }
+  }
+
+  .header {
+    .header-top {
+      height: auto;
+
+      .wrapper__item {
+        align-items: center;
+        justify-content: center;
+        flex-basis: 50%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+        &::before {
+          display: none;
+        }
+
+        &:first-child {
+          flex-basis: 100%;
+        }
+      }
+    }
+
+    .header-middle .row .item-col {
+      &:nth-child(1) {
+        flex-basis: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        flex-basis: 50%;
+        margin-bottom: 20px;
+
+        .items-wrap {
+          align-items: flex-start;
+          justify-content: flex-start;
+        }
+      }
+    }
+
+    .header-bottom-wrap {
+      display: flex;
+      flex-wrap: wrap;
+
+      nav.navbar {
+        flex-basis: 100%;
+
+        &-brand {
+          padding-left: 15px;
+        }
+
+        .dropdown-menu {
+          max-width: 659px;
+        }
+
+        ul.navbar-nav {
+          li.nav-item {
+            height: 70px;
+            display: flex;
+            align-items: center;
+
+            .nav-link {
+              padding-top: 0;
+              padding-bottom: 0;
+            }
+          }
+        }
+      }
+
+      .consult-wrap {
+        button {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .headline-wrap {
+
+    .headline-title {
+      font-size: 22px;
+    }
+
+    .headline-descr {
+      font-size: 18px;
+    }
+  }
+
+  #form-order span.note_text {
+    margin-bottom: 10px;
+  }
+
+  #info-block .service-block__content {
+    padding-left: 30px;
+
+    .service-block__wrap .descr {
+      margin-bottom: 10px;
+    }
+  }
+
+  .news-content {
+    margin-bottom: 50px;
+  }
+
+  #map_contact .map_container .content_block {
+    height: auto;
+
+    a.btn {
+      text-align: center;
+    }
+  }
+
+  .consult-wrap {
+    display: none;
+  }
+
+  .radio-docs-item {
+    margin-bottom: 15px;
+  }
+
+  #slider-post::after {
+    display: none;
+  }
+
+  section#reviews-content .reviews-content .reviews-block-content button {
+    padding: 20px 25px;
+    margin-bottom: 10px;
+  }
+
+  #map .map_container .content_block form span {
+    font-size: 16px;
+  }
+
+  section#block_form {
+
+    .title-block {
+      font-size: 24px;
+      margin-bottom: 25px;
+    }
+
+    .descr-block {
+      font-size: 18px;
+    }
+  }
+
+  #service-content {
+    padding: 70px 0;
+
+    .list-block__wrap {
+      .right-block-title {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  footer .footer__wrap {
+    h3 {
+      margin-top: 20px;
+    }
+
+    ul.footer_menu--list {
+      margin-bottom: 50px !important;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    .header-top {
+      height: auto;
+
+      .wrapper__item {
+        align-items: center;
+        justify-content: center;
+        flex-basis: 50%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+        &::before {
+          display: none;
+        }
+
+        &:first-child {
+          flex-basis: 100%;
+        }
+      }
+    }
+  }
+}
 
 // ≤992px
 @include media-breakpoint-up(lg) {}
