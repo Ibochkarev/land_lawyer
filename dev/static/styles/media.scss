@@ -271,6 +271,43 @@
     }
   }
 
+  section#reviews-content .reviews-content {
+    h2 {
+      margin-left: 15px;
+    }
+
+    .reviews-block-content {
+      span.title {
+        margin-bottom: 0;
+      }
+
+      span.note {
+        margin-bottom: 15px;
+      }
+
+      .progress-wrap {
+        margin-top: 10px;
+        margin-bottom: 25px;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+
+    .reviews-block-footer {
+      height: auto;
+
+      .sort-title {
+        display: block;
+      }
+
+      .sort-link {
+        display: block;
+      }
+    }
+  }
+
   .footer-contact__wrap {
     text-align: center;
 
